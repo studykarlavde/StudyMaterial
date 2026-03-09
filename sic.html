@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIC - Study Notes Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">← Back to Subjects</a>
+            <h1>📊 SIC</h1>
+        </header>
+
+        <main>
+            <div id="notes-list" class="notes-grid">
+                <!-- PDFs loaded dynamically -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Study Notes Library</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const notesData = [
+            {
+                title: "SIC_Practical_1-9.pdf",
+                description: "Complete SIC Practicals"
+            },
+            {
+                title: "SCManual.pdf",
+                description: "Manual COdes and other backchodi"
+            },
+            {
+                title: "CiscoPacketTracer_900_win_64bit.exe",
+                link: "https://drive.google.com/file/d/1blUaTEN4H0Psin0MIL6DJavEJlt1QLXr/view?usp=drive_link",
+                description: "CiscoPacketTracer_900_win_64bit.exe"
+            },
+            {
+                title: "P1.pka",
+                description: "p1 Packet Tracer - Configure Cisco Routers for Syslog, NTP, and SSH Operations"
+            },
+            {
+                title: "P2.pka",
+                description: "p2 Configure AAA Authentication on Cisco Routers.pka"
+            },
+            {
+                title: "P3_1.pka",
+                description: "p3 Configuring Extended ACLs Scenario 1.pka"
+            },
+            {
+                title: "P3_2.pka",
+                description: "p3-2 Packet Tracer - Configuring Extended ACLs Scenario 2.pka"
+            },
+            {
+                title: "P3_3.pka",
+                description: "p3-3 Configuring Extended ACLs Scenario 3.pka"
+            },
+            {
+                title: "P4.pka",
+                description: "p4 Packet Tracer - Configure IP ACLs to Mitigate Attacks.pka"
+            },
+            {
+                title: "P5.pka",
+                description: "p5 - Configuring IPv6 ACLs.pka"
+            },
+            {
+                title: "P6.pka",
+                description: "p6- Configuring a Zone-Based Policy Firewall (ZPF).pka"
+            },
+            {
+                title: "P7.pka",
+                description: "p7 Packet Tracer - Configuring a Zone-Based Policy Firewall (ZPF).pka"
+            },
+            {
+                title: "P8.pka",
+                description: "p8 Packet Tracer - Layer 2 Security.pka"
+            },
+            {
+                title: "P9.pka",
+                description: "p9 Packet Tracer - Layer 2 VLAN Security.pkap9 Packet Tracer - Layer 2 VLAN Security.pka"
+            },
+            {
+                title: "P10.pka",
+                description: "p10 Packet Tracer - Configure and Verify a Site-to-Site IPsec VPN using CLI.pka"
+            },
+            {
+                title: "P11.pka",
+                description: "p11 Packet Tracer - Configuring ASA Basic Settings and Firewall Using CLI.pka"
+            }
+            // Add more SIC PDFs here!
+        ];
+        loadNotes(notesData, 'SIC');
+    </script>
+</body>
+</html>

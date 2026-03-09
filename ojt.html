@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJT - Study Notes Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">← Back to Subjects</a>
+            <h1>💼 OJT (On-the-Job Training)</h1>
+        </header>
+
+        <main>
+            <div id="notes-list" class="notes-grid">
+                <!-- PDFs loaded dynamically -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Study Notes Library</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const notesData = [
+            {
+                filename: "ojt-guidelines.pdf",
+                title: "OJT Guidelines",
+                description: "On-the-job training procedures and expectations"
+            }
+            // Add more OJT PDFs here!
+        ];
+        loadNotes(notesData, 'OJT');
+    </script>
+</body>
+</html>

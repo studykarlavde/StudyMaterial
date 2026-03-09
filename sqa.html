@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQA - Study Notes Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">← Back to Subjects</a>
+            <h1>🧪 SQA (Software Quality Assurance)</h1>
+        </header>
+
+        <main>
+            <div id="notes-list" class="notes-grid">
+                <!-- PDFs loaded dynamically -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Study Notes Library</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // SQA NOTES - ADD YOUR PDFs HERE!
+        const notesData = [
+            {
+                title: "SQA_Practical_1-7.pdf",
+                description: "GOOP GOOOP GOOP 7 baar"
+            },
+            {
+                title: "SQA_practical_8-10.pdf",
+                description: "GOOP GOOOP GOOP 8 se 10 baar"
+            },
+            {
+                title: "SQA_practical_1-9.pdf",
+                description: "GOOP GOOOP GOOP 9 baar"
+            },
+            {
+                title: "SQA_Login_Test_3_Unsuccessfull.side",
+                description: "1 Successfull and 3 Unsuccsesfull"
+            },
+            {
+                title: "SQA_Login_Test_All_Successfull.side",
+                description: "All 4 Test Successfully Executed"
+            }
+,
+            {
+                title: "Software Testing Journal_Shruti Parab.pdf",
+                description: "All Test Successfully Executed"
+            }
+            // Add more: { filename: "your-file.pdf", title: "Title", description: "Desc" }
+        ];
+        loadNotes(notesData, 'SQA');
+    </script>
+</body>
+</html>
